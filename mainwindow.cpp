@@ -217,7 +217,6 @@ void MainWindow::on_pushButtonCreateDesktop_clicked()
             out << "Icon=" << iconPath << "\n";
         out << "Terminal=false\n";
         out << "Categories=Utility;\n";
-        // Mark the launcher as created by our tool.
         out << "X-Created-By=LauncherCreator\n";
         desktopFile.close();
         desktopFile.setPermissions(desktopFile.permissions() | QFileDevice::ExeOwner);
