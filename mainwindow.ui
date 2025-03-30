@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Launcher Creator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabCreate">
+       <attribute name="title">
+        <string>Create Launcher</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayoutCreate">
+        <item>
+         <widget class="QPushButton" name="pushButtonSelectIcon">
+          <property name="text">
+           <string>Select Icon</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelIconOutput">
+          <property name="text">
+           <string>No icon selected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacerIcon">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonSearchApps">
+          <property name="text">
+           <string>Search Applications</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEditAppOutput">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string>No application selected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelDesktopName">
+          <property name="text">
+           <string>Launcher Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditDesktopName"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonCreateDesktop">
+          <property name="text">
+           <string>Create Desktop File</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelCreationOutput">
+          <property name="text">
+           <string>No file created yet.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabManage">
+       <attribute name="title">
+        <string>Manage Launchers</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayoutManage">
+        <item>
+         <widget class="QLineEdit" name="lineEditSearchLaunchers"/>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidgetLaunchers">
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonRemoveLauncher">
+          <property name="text">
+           <string>Remove Selected Launcher</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
